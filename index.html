@@ -7,36 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div>
+        <div  class="container">
+            <img id="img" src="assets/banner-nav3.jpg" class="img1" alt="img here">
+           
+        </div>
+        <div class="container">
         <table>
             <tr>
                 <td colspan="2" style="text-align: center; font-size: 22pt; color:#000 ;">Image Resizer</td>
             </tr>
             <tr>
                 <td>Height</td>
-                <td><input type="textbox" id="hh"></td>
+                <td><input type="textbox" id="hh" required></td>
             </tr>
             <tr>
                 <td>Width</td>
-                <td><input type="textbox" id="ww"></td>
+                <td><input type="textbox" id="ww" required></td>
             </tr>
             <tr>
                 <td>Border Width</td>
-                <td><input type="textbox" id="bw"></td>
+                <td><input type="textbox" id="bw" required></td>
             </tr>
             <tr>
                 <td>Border Style</td>
-                <td><input type="textbox" id="bs"></td><br>
+                <td><input type="textbox" id="bs" required></td>
             </tr>
             <tr>
                 <td>Border Color</td>
-                <td><input type="textbox" id="bc"></td>
+                <td><input type="textbox" id="bc" required></td>
             </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;"><button class="btn1" onclick="rsz()">Apply settings</button></td></tr><br>
-                <img id="img" src="file:///C:/Users/ankit/Desktop/Learning/Navbar/nav-assets/banner-nav3.jpg" class="img1" alt="img here">
-            </tr>
+           
         </table>
+        
+    </div>
+   <div class="container">
+    <button class="btn1" onclick="rsz()">Apply</button>
+   </div>
     </div>
     <script src="main.js"></script>
 </body>
